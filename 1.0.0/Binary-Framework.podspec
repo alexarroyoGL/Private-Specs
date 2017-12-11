@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|  
-    s.name              = 'TestSDK'
+    s.name              = 'VSeeSDK'
     s.version           = '1.0.0'
-    s.summary           = 'Test SDK stuff.'
+    s.summary           = 'VSeenSDK stuff.'
     s.homepage          = 'http://example.com/'
 
     s.author            = { 'Name' => 'sdk@example.com' }
@@ -12,5 +12,5 @@ Pod::Spec.new do |s|
     s.resources         = 'VSeeKit.bundle'
 
     s.ios.deployment_target = '8.0'
-    s.ios.vendored_frameworks = 'TestSDK.framework'
+    s.ios.vendored_frameworks = 'VSeeSDK.framework'
 end 
