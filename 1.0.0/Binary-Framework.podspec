@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|  
     s.name              = 'Binary-Framework'
     s.version           = '1.0.0'
-    s.summary           = 'Binary-Framework stuff.'
+    s.summary           = 'Binary-Framework stuff'
     s.homepage          = 'http://example.com/'
 
     s.author            = { 'Name' => 'sdk@example.com' }
@@ -10,6 +10,6 @@ Pod::Spec.new do |s|
     s.source            = { :http => 'http://localhost:8000/VSeeKit.zip' }
     s.resources         = 'VSeeKit.bundle'
 
-    s.platform     = :ios, '8.0'
-    s.ios.vendored_frameworks = 'VSeeKit.framework'
+    s.platform          = :ios
+    s.ios.deployment_target = "8.0"
 end
