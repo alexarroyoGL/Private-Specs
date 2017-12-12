@@ -1,16 +1,15 @@
 Pod::Spec.new do |s|  
-    s.name              = 'VSeeSDK'
+    s.name              = 'Binary-Framework'
     s.version           = '1.0.0'
-    s.summary           = 'VSeenSDK stuff.'
+    s.summary           = 'Binary-Framework stuff.'
     s.homepage          = 'http://example.com/'
 
     s.author            = { 'Name' => 'sdk@example.com' }
-    s.license           = { :type => 'Apache-2.0', :file => 'LICENSE' }
+    s.license           = { :type => 'Proprietary', :text => "Copyright (c) 2017. All rights reserved." }
 
-    s.platform          = :ios
     s.source            = { :http => 'http://localhost:8000/VSeeKit.zip' }
     s.resources         = 'VSeeKit.bundle'
 
-    s.ios.deployment_target = '9.0'
-    s.ios.vendored_frameworks = 'VSeeSDK.framework'
+    s.platform     = :ios, '8.0'
+    s.ios.vendored_frameworks = 'VSeeKit.framework'
 end
