@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|  
-    s.name              = 'Binary-Framework'
+    s.name              = 'SampleDynamicLibPod'
     s.version           = '1.0.0'
-    s.summary           = 'Binary-Framework stuff'
+    s.summary           = 'SampleDynamicLibPod stuff'
     s.homepage          = 'http://example.com/'
 
     s.author            = { 'Name' => 'sdk@example.com' }
@@ -9,7 +9,10 @@ Pod::Spec.new do |s|
 
     s.source            = { :http => 'http://localhost:8000/VSeeKit.zip' }
     s.resources         = 'VSeeKit.bundle'
+    
+    s.platform = :ios, '9.0'
+    s.ios.deployment_target = '9.0'
+    s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3' }
 
-    s.platform          = :ios
-    s.ios.deployment_target = "8.0"
+    s.vendored_frameworks = 'VSeeKit.framework'
 end
